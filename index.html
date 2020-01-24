@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="number.js" defer></script>
+
+</head>
+<body>
+    <form>
+        First Number: <br/>
+        <input type="text" id="first" required>
+        Second Number: <br/>
+        <input type="text" id="second" required>
+        Third Number: <br/>
+        <input type="text" id="third" required>
+    </form>
+
+    <form>
+        Fourth Number: <br/>
+        <input type="text" id="fourth" required>
+        Fith Number: <br/>
+        <input type="text" id="fifth" required>
+        Sixth Number: <br/>
+        <input type="text" id="sixth" required>
+
+    </form>
+
+    <article>Output: <span id="output"></span></article>
+
+    <form id="buttons">
+        <form>
+            <button name="submit" type="button" onclick="orderM()">order least to highest</button> <br/>
+            <button name="submit" type="button" onclick="middleM()">middle</button> <br/>
+            <button name="submit" type="button" onclick="largestM()">largest number</button> <br/>
+        </form>
+        <form>
+            <button name="submit" type="button" onclick="smallestM()">smallest number</button> <br/>
+            <button name="submit" type="button" onclick="meanM()">mean</button> <br/>
+            <button name="submit" type="button" onclick="modeM()">mode</button> <br/>
+        </form>
+        <form>
+            <button name="submit" type="button" onclick="rangeM()">range</button> <br/>
+            <button name="submit" type="button" onclick="duplicateM()">duplicate</button> <br/>
+            <button name="submit" type="button" onclick="uniqueM()">unique</button> <br/>
+        </form>
+    </form>
+</body>
+</html>
