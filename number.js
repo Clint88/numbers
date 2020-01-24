@@ -182,10 +182,24 @@ function rangeM(){
     return rangeSol;
 }
 
+//ex there are 2 2
 // function duplicateM(){
 
 // }
 
-// function uniqueM(){
-    
-// }
+//numbers that are not simaler
+function uniqueM(){
+    var first = parseFloat(doc1.value);
+    var second = parseFloat(doc2.value);
+    var third = parseFloat(doc3.value);
+    var fourth = parseFloat(doc4.value);
+    var fifth = parseFloat(doc5.value);
+    var sixth = parseFloat(doc6.value);
+
+    if(first===second || first===third ||| first===fourth || first===fifth || first||sixth){
+        output.innerHTML = first;
+    }
+    else if(first!==second || first===third ||| first===fourth || first===fifth || first||sixth){
+        output.innerHTML = first;
+    }
+}
