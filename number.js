@@ -121,15 +121,16 @@ function orderM(){
         first = second;
     }
     
-    else{
-        o6 = one;
-    }
+    o6 = Math.min(first);
+    
 
-    output.innerHTML = "Output: " + o1 + ", " + o2 + ", " + o3 + ", " + o4 + ", " + o5 + ", " + o6;
+    orderLB = o1 + ", " + o2 + ", " + o3 + ", " + o4 + ", " + o5 + ", " + o6;
+    output.innerHTML = orderLB;
+    return orderLB
 }
 
 // function middleM(){
-    
+
 // }
 
 function largestM(){
@@ -170,9 +171,13 @@ function meanM(){
     return solveMode;
 }
 
-// function modeM(){
-    
-// }
+function modeM(){
+    orderLB();
+
+    var middleS = orderLB;
+    output.innerHTML = middleS;
+    return middleS; 
+}
 
 function rangeM(){
     largestM();
@@ -196,10 +201,43 @@ function uniqueM(){
     var fifth = parseFloat(doc5.value);
     var sixth = parseFloat(doc6.value);
 
-    if(first===second || first===third ||| first===fourth || first===fifth || first||sixth){
-        output.innerHTML = first;
+    var o1 = 0;
+    var o2 = 0;
+    var o3 = 0;
+    var o4 = 0;
+    var o5 = 0;
+    var o6 = 0;
+
+    if(first !== second && first !== third && first !== fourth && first !== fifth && first !== sixth){
+    output.innerHTML = first + ", " + second + ", " + third + ", " + fourth + ", " + fifth + ", " + sixth;;
     }
-    else if(first!==second || first===third ||| first===fourth || first===fifth || first||sixth){
-        output.innerHTML = first;
+    else if(first === second && first !== third && first !== fourth && first !== fifth && first !== sixth){
+        output.innerHTML = first + ", " + third + ", " + fourth + ", " + fifth + ", " + sixth;
+    }
+    if(first !== second && first === third && first !== fourth && first !== fifth && first !== sixth){
+        output.innerHTML = first + ", " + second + ", " + fourth + ", " + fifth + ", " + sixth;;
+    }
+    if(first !== second && first !== third && first === fourth && first !== fifth && first !== sixth){
+        output.innerHTML = first + ", " + second + ", " + third + ", " + fifth + ", " + sixth;;
+    }
+    if(first !== second && first !== third && first !== fourth && first === fifth && first !== sixth){
+        output.innerHTML = first + ", " + second + ", " + third + ", " + fourth + ", " + sixth;;
+    }
+    else if(first === second && first !== third && first !== fourth && first !== fifth && first === sixth){
+        output.innerHTML = first + ", " + third + ", " + fourth + ", " + fifth;
+    }
+
+
+    else if(first === second && first !== third && first !== fourth && first !== fifth && first !== sixth){
+        output.innerHTML = first + ", " + third + ", " + fourth + ", " + fifth + ", " + sixth;
+    }
+    else if(first === second && first !== third && first !== fourth && first !== fifth && first !== sixth){
+        output.innerHTML = first + ", " + third + ", " + fourth + ", " + fifth + ", " + sixth;
+    }
+    else if(first === second && first !== third && first !== fourth && first !== fifth && first !== sixth){
+        output.innerHTML = first + ", " + third + ", " + fourth + ", " + fifth + ", " + sixth;
+    }
+    else if(first === second && first !== third && first !== fourth && first !== fifth && first !== sixth){
+        output.innerHTML = first + ", " + third + ", " + fourth + ", " + fifth + ", " + sixth;
     }
 }
